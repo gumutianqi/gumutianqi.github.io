@@ -56,7 +56,8 @@ export default defineUserConfig<DefaultThemeOptions>({
       {
         text: '随笔',
         children: [
-          '/tricks/about-life.md'
+          '/tricks/about-life.md',
+          '/tricks/hhkb-pro2-types-show.md'
         ]
       },
     ],
