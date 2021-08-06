@@ -77,12 +77,6 @@ export default defineUserConfig<DefaultThemeOptions>({
           },
         },
       },
-    ],
-    [
-      '@vuepress/pwa',
-      {
-        skipWaiting: true,
-      },
-    ],
+    ]
   ]
 })
