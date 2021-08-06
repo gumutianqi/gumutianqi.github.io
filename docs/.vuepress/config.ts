@@ -9,6 +9,23 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   themeConfig: {
     logo: '/images/logo.png',
+    smoothScroll: true,
+    contributors: false,
+    lastUpdatedText: '上次更新',
+    navbar: [
+      {
+        text: '首页',
+        link: '/'
+      },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/gumutianqi'
+      },
+      {
+        text: '讨论区',
+        link: '/board.md'
+      }
+    ],
     sidebarDepth: 0,
     sidebar: [
       {
@@ -36,6 +53,12 @@ export default defineUserConfig<DefaultThemeOptions>({
       {
         text: '最佳实践',
         children: [
+          {
+            text: '聊聊数据',
+            children: [
+              '/best-practice/talk-about-data/try-to-tapdata.md',
+            ]
+          },
           {
             text: '微服务',
             children: [
