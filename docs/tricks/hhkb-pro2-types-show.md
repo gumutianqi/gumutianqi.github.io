@@ -6,6 +6,8 @@ description: 最后一个键盘 HHKB-PRO2-TypeS，开箱 HHKB
 
 # 最后一个键盘 HHKB-PRO2-TypeS
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=gumutianqi_github_io-tricks_hhkb_pro2_types_show)
+
 [[toc]]
 
 ## 序

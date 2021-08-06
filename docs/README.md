@@ -6,6 +6,8 @@ description: 前言，写在前面的话
 
 ## 写在前面的话
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=gumutianqi_github_io-reademe)
+
 [[toc]]
 
 > 我是写在前面的话
