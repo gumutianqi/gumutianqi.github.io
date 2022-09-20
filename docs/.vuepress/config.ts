@@ -42,8 +42,15 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
       {
         text: "云原生",
-        children: ["/cloud-native/abount-cloud-native.md"],
-      },
+        children: [{
+          text: "关于云原生",
+          children: ["/cloud-native/abount-cloud-native.md",]
+        },
+        {
+          text: "初识 TektonCD",
+          children: ["/cloud-native/first-know-tektoncd.md",]
+        }
+        ]},
       {
         text: "最佳实践",
         children: [
