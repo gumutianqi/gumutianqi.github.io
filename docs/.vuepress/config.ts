@@ -1,97 +1,78 @@
-import type { DefaultThemeOptions } from "vuepress";
 import { defineUserConfig } from "vuepress";
+import { hopeTheme } from "vuepress-theme-hope";
 
-export default defineUserConfig<DefaultThemeOptions>({
-  lang: "zh-CN",
-  title: "古拉里 学架构",
-  description: "Just Do IT",
-  head: [["link", { rel: "icon", href: "/images/favicon.ico" }]],
-
-  themeConfig: {
-    logo: "/images/logo.png",
-    smoothScroll: true,
-    contributors: false,
-    lastUpdatedText: "上次更新",
-    navbar: [
-      {
-        text: "首页",
-        link: "/",
-      },
-      {
-        text: "GitHub",
-        link: "https://github.com/gumutianqi",
-      },
-      {
-        text: "讨论区",
-        link: "/board.md",
-      },
-    ],
-    sidebarDepth: 0,
-    sidebar: [
-      {
-        text: "目录",
-        link: "/SUMMARY.md",
-      },
-      {
-        text: "前言",
-        children: ["/introduction/about-me.md"],
-      },
-      {
-        text: "读书笔记",
-        children: ["/reading/about-reading.md"],
-      },
-      {
-        text: "云原生",
-        children: [{
-          text: "关于云原生",
-          children: ["/cloud-native/abount-cloud-native.md",]
-        },
-        {
-          text: "初识 TektonCD",
-          children: ["/cloud-native/first-know-tektoncd.md",]
-        }
-        ]},
-      {
-        text: "最佳实践",
-        children: [
-          {
-            text: "聊聊数据",
-            children: ["/best-practice/talk-about-data/try-to-tapdata.md"],
-          },
-          {
-            text: "微服务",
-            children: ["/best-practice/microservice/about-microservice.md"],
-          },
-          {
-            text: "Serverless",
-            children: ["/best-practice/serverless/about-serverless.md"],
-          },
-          {
-            text: "RFC 日常",
-          },
+export default defineUserConfig({
+    lang: "zh-CN",
+    title: "古拉里 学架构",
+    description: "Just Do IT",
+    head: [["link", { rel: "icon", href: "/images/favicon.ico" }]],
+    theme: hopeTheme({
+        logo: "/images/logo.png",
+        hostname: "https://gumutianqi.github.io",
+        repo: "https://github.com/gumutianqi",
+        author: "Larry Koo",
+        displayFooter: true,
+        footer: "生命的意义是成为你自己",
+        backToTop: true,
+        iconAssets: "iconfont",
+        navbar: [
+            {
+                text: "博客",
+                link: "/blog/",
+                icon: "keyboard",
+            },
+            {
+                text: "读书笔记",
+                link: "/book/",
+                icon: "read",
+            },
+            {
+                text: "间隙日记",
+                link: "/diary/",
+                icon: "note",
+            },
         ],
-      },
-      {
-        text: "随笔",
-        children: ["/tricks/about-life.md", "/tricks/hhkb-pro2-types-show.md"],
-      },
-    ],
-  },
-  plugins: [
-    [
-      "@vuepress/docsearch",
-      {
-        apiKey: "<API_KEY>",
-        indexName: "<INDEX_NAME>",
-        locales: {
-          "/": {
-            placeholder: "Search Documentation",
-          },
-          "/zh/": {
-            placeholder: "搜索文档",
-          },
+        sidebar: {
+            "/blog/": [
+                {
+                    text: "博客",
+                    link: "/blog/",
+                    icon: "keyboard",
+                    children: [
+                        {
+                            text: "云原生",
+                            icon: "launch",
+                            link: "/blog/cloud-native/",
+                            prefix: "/blog/cloud-native/",
+                            children: ["first-know-tektoncd.md"],
+                        },
+                        {
+                            text: "微服务",
+                            icon: "leaf",
+                            link: "/blog/microservice/",
+                            prefix: "/blog/microservice/",
+                            children: [],
+                        },
+                    ],
+                },
+            ],
+            "/book/": [
+                {
+                    text: "读书笔记",
+                    link: "/book/",
+                    icon: "read",
+                    children: [],
+                },
+            ],
+            "/diary/": [
+                {
+                    text: "间隙日记",
+                    link: "/diary/",
+                    icon: "note",
+                    children: ["hhkb-pro2-types-show.md"],
+                },
+            ],
         },
-      },
-    ],
-  ],
+    }),
+    plugins: [],
 });
