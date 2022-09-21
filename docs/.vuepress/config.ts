@@ -1,3 +1,4 @@
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
 
@@ -74,5 +75,11 @@ export default defineUserConfig({
             ],
         },
     }),
-    plugins: [],
+    plugins: [
+        docsearchPlugin({
+            appId: "",
+            apiKey: "",
+            indexName: "gumutianqi_awesome",
+        }),
+    ],
 });
