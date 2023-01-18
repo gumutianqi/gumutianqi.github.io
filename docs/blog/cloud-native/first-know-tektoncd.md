@@ -52,7 +52,23 @@ Tekton 实际上只会安装两个 Pod，分别是 `tekton-pipelines-controller`
 
 **解决无法下载 grc.io 镜像的问题**
 
-// TODO
+```yaml
+## 依赖需要的 gcr.io 镜像，可自行拉去后，推送到自己的镜像仓库，最后替换 Tekton Pipelines release.yaml 中的相关域名
+
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:latest
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/kubeconfigwriter:latest
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:latest
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:latest
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:latest
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/imagedigestexporter:latest
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init:latest
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:latest
+gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:latest
+
+gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+distroless.dev/busybox:latest
+mcr.microsoft.com/powershell:nanoserver:latest
+```
 
 ### 检查是否安装成功
 
