@@ -1,0 +1,4 @@
+import{_ as a}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as r,f as e,a as t,d as s}from"./app.d4ac3f10.js";const c={},n=t("h1",{id:"\u76EE\u5F55",tabindex:"-1"},[t("a",{class:"header-anchor",href:"#\u76EE\u5F55","aria-hidden":"true"},"#"),s(" \u76EE\u5F55")],-1);function d(l,p){return o(),r("div",null,[n,e(` :::tip \u6570\u636E\u7EDF\u8BA1
+\u5217\u5165\u76EE\u5F55\u6587\u7AE0 <words type='total' chapter='/' /> \u7BC7\uFF0C\u5B9E\u9645\u6587\u7AE0\u603B\u6570 <words type='finish' chapter='/' /> \u7BC7\uFF08\u542B\u76EE\u5F55\u5916\u6587\u7AE0\uFF09\uFF0C
+\u5408\u8BA1\u603B\u5B57\u6570 <words type='span' chapter='/' />  \u5B57\uFF0C\u6700\u540E\u66F4\u65B0\u65E5\u671F <words type='updatedText' />\u3002
+::: `),e(" <GlobalTOC pages='/' :level='0' >Loading...</GlobalTOC> ")])}const h=a(c,[["render",d],["__file","SUMMARY.html.vue"]]);export{h as default};
