@@ -25,7 +25,7 @@ export default hopeTheme({
     timeline: "时光轴",
     medias: {
       GitHub: "https://github.com/gumutianqi",
-      Twitter: "https://x.com/larrykoo711"
+      Twitter: "https://x.com/gumutianqi"
     }
   },
   metaLocales: {
