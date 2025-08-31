@@ -1,0 +1,14 @@
+// place your custom styles here
+
+// 简单的自定义样式
+.theme-hope-content {
+  // 可以在这里添加其他需要的样式
+}
+
+// 隐藏多语言切换按钮
+.navbar-locale-dropdown,
+.locale-dropdown,
+.lang-dropdown,
+.switch-language {
+  display: none !important;
+}
