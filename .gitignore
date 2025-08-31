@@ -30,3 +30,4 @@ pnpm-debug.log*
 .husky/
 .clasp.json
 .claude/
+.vercel

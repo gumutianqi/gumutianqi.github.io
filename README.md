@@ -4,6 +4,8 @@
 
 访问博客：`https://gumutianqi.github.io/`
 
+也可通过自定义域名访问：`https://larrykoo.com/`
+
 这是古老师的个人技术博客，专注云原生、AI/LLM/Agent 与工程实践的原创分享。站点基于 VuePress v2 + Vite 构建，并通过 GitHub Actions 自动发布到 `gh-pages` 分支。
 
 ---

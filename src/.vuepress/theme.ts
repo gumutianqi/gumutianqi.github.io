@@ -11,7 +11,7 @@ export default hopeTheme({
     email: "larry.koo711@gmail.com",
   },
   logo: "/logo.png",
-  repo: "gumutianqi/gumutianqi.github.io",
+  repo: "gumutianqi",
   docsDir: "src",
   // navbar
   navbar: zhNavbar,
@@ -23,6 +23,10 @@ export default hopeTheme({
     description: "专注云原生 |  🤖 AI 降临派 | 🧑‍💻 投身人工智能/ LLM / Agent | ✨ AIGC 创作",
     intro: "/intro.html",
     timeline: "时光轴",
+    medias: {
+      GitHub: "https://github.com/gumutianqi",
+      Twitter: "https://x.com/larrykoo711"
+    }
   },
   metaLocales: {
     // editLink: "在 GitHub 上编辑此页",
